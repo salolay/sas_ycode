@@ -21,9 +21,10 @@ int main() {
 
 		if (choix == 1) {
 			printf("Combien de livres voulez-vous ajouter ? ");
-		scanf("%d", &nb);
+            scanf("%d", &nb);
 			for(int i=0; i<nb; i++) {
 				printf("\n Livre N %d\n", i+1);
+
 				printf("Titre : ");
 				scanf(" %[^\n]", titres[n]);
 				printf("Auteur : ");
@@ -35,20 +36,20 @@ int main() {
 				n++;
 			}
 		}
-	if (choix == 2) {
-    if (n == 0) {
-        printf("\nAucun livre en stock.\n");
-    } else {
-        printf("\n+----+----------------------+----------------------+---------+--------+\n");
-        printf("| ID | Titre                | Auteur               | Prix DH | Qte    |\n");
-        printf("+----+----------------------+----------------------+---------+--------+\n");
-        for (int i = 0; i < n; i++) {
-            printf("| %-2d | %-20s | %-20s | %7.2f | %-6d |\n",
-                    i+1, titres[i], auteurs[i], prix[i], quantite[i]);
+        if (choix == 2) {
+            if (n == 0) {
+                printf("\nAucun livre en stock.\n");
+            } else {
+                printf("\n+----+----------------------+----------------------+---------+--------+\n");
+                printf("| ID | Titre                | Auteur               | Prix DH | Qte    |\n");
+                printf("+----+----------------------+----------------------+---------+--------+\n");
+                for (int i = 0; i < n; i++) {
+                    printf("| %-2d | %-20s | %-20s | %7.2f | %-6d |\n",
+                        i+1, titres[i], auteurs[i], prix[i], quantite[i]);
+                }
+                printf("+----+----------------------+----------------------+---------+--------+\n");
+            }
         }
-        printf("+----+----------------------+----------------------+---------+--------+\n");
-    }
-}
 
 		if (choix == 3) {
 			char t[50];
