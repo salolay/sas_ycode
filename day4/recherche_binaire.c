@@ -23,7 +23,7 @@ int main()
     while(debut <= fin){
         int milieu= (int)(debut +fin)/2;
         if( tab[milieu] == x ){
-            printf("La valeur %d exist a la position %d (indice %d)",tab[milieu], milieu, i+milieu);
+            printf("La valeur %d exist a la position %d (indice %d",tab[milieu], milieu, i+milieu);
             EST_Trouver=1;
             break;
         }else {
@@ -34,7 +34,7 @@ int main()
                 fin=milieu-1;
         }
     }
-    if( EST_Trouver == 0)
+    if( EST_Trouver = 0)
         printf("la valeur %d n'exist pas dans le tableau ", x);
 
     return 0;

@@ -24,7 +24,7 @@ int main()
 
 
     int trouver=0;
-    for( int i=0 ; i<20 ; i++)
+    for( int i=0 ; i<n ; i++)
     {
         if(strcmp(text[i],mot)==0){
             printf("le mot %s est dans le text", mot);

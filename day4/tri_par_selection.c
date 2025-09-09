@@ -30,7 +30,7 @@ int main()
     }
 
     printf("le tableau apres le tri :\n");
-    for(int i=0 ; i<n-1 ; i++){
+    for(int i=0 ; i<n ; i++){
         printf("tab[%d]=%d \n", i+1,tab[i]);
     }
     return 0;
